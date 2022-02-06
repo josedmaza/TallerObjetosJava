@@ -13,7 +13,7 @@ public class Empleado {
      */
     protected String nombre;
     private double sueldo;
-    private Date altaContrato;
+    protected Date altaContrato;
 
     /**
      * Constructor por defecto

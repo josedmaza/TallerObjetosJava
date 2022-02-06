@@ -94,16 +94,4 @@ public class Persona {
                 "Weight: " + weight + "\n" +
                 "IMC: "  +  name + " " + calcularIMC() + "\n";
     }
-
-    public static void main(String[] args) {
-        Persona persona1 = new Persona("Jose", "Maza", "Arnedo", 1995,10,21, 1.74f, 76f);
-        System.out.println(persona1);
-        Persona persona2 = new Persona();
-        persona2.setName(JOptionPane.showInputDialog("Ingrese su nombre"));
-        persona2.setHeight(Float.parseFloat(JOptionPane.showInputDialog("Ingrese su altura en metros")));
-        persona2.setWeight(Float.parseFloat(JOptionPane.showInputDialog("Ingrese su peso")));
-        System.out.println(persona2);
-    }
-
-
 }

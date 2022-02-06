@@ -42,17 +42,10 @@ public class Fruta {
 
     @Override
     public String toString() {
-        return "poo.Fruta" + "\n" +
+        return "Fruta" + "\n" +
                 "name: " + name + "\n" +
                 "averageWeight: " + averageWeight + "\n" +
                 "colors: " + colors;
-    }
-
-    public static void main(String[] args) {
-        Fruta Manzana = new Fruta("Manzana", 1.5f, new ArrayList<String>());
-        Manzana.colors.add("Roja");
-        Manzana.colors.add("Amarilla");
-        System.out.println(Manzana);
     }
 }
 
