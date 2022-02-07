@@ -18,7 +18,7 @@ public class Main {
         Fruit Manzana = new Fruit("Manzana", 1.5f, new ArrayList<String>());
         Manzana.colors.add("Roja");
         Manzana.colors.add("Amarilla");
-        System.out.println(Manzana);
+        System.out.println(Manzana + "\n");
 
         // Instancia clase Empleado
         Employee[] empleados = new Employee[3];
