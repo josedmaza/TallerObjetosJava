@@ -1,6 +1,5 @@
 package poo;
 
-import javax.swing.*;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -8,7 +7,7 @@ import java.util.GregorianCalendar;
  * Una clase que representa una persona y algunos de sus atributos.
  * @author Jose Daniel Maza
  */
-public class Persona {
+public class Person {
 
     /**
      * atributos de la clase.
@@ -23,7 +22,7 @@ public class Persona {
     /**
      * Constructor por defecto.
      */
-    public Persona(){
+    public Person(){
         this.name = "";
         this.lastName1 = "";
         this.lastName2 = "";
@@ -41,7 +40,7 @@ public class Persona {
      * @param height Altura de la persona.
      * @param weight Peso de la persona.
      */
-    public Persona(String name, String lastName1, String lastName2, int agno, int mes, int dia, Float height, Float weight){
+    public Person(String name, String lastName1, String lastName2, int agno, int mes, int dia, Float height, Float weight){
         this.name = name;
         this.lastName1 = lastName1;
         this.lastName2 = lastName2;

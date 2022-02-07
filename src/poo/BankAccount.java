@@ -4,7 +4,7 @@ package poo;
  * @author jose
  * Clase que representa una cuenta bancaria
  */
-public class CuentaBancaria {
+public class BankAccount {
     /**
      *
      */
@@ -15,7 +15,7 @@ public class CuentaBancaria {
      * Constructor de la clase
      * @param accountNumber
      */
-    public CuentaBancaria(int accountNumber) {
+    public BankAccount(int accountNumber) {
         this.accountNumber = accountNumber;
         this.activated = false;
     }

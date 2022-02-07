@@ -4,7 +4,7 @@ package poo;
  * @author jose
  * Clase que representa una impresora
  */
-public class Impresora {
+public class Printer {
     /**
      * Atributos de la clase
      */
@@ -22,7 +22,7 @@ public class Impresora {
      * @param tipoTinta
      * @param tipoPapel
      */
-    public Impresora (String marca, int modelo, String color, String tipoTinta, String tipoPapel){
+    public Printer(String marca, int modelo, String color, String tipoTinta, String tipoPapel){
         this.marca = marca;
         this.modelo = modelo;
         this.color = color;
@@ -102,7 +102,7 @@ public class Impresora {
     }
 
     public static void main(String[] args) {
-        Impresora impresora = new Impresora("HP", 123, "negra", "a color", "Carta");
+        Printer impresora = new Printer("HP", 123, "negra", "a color", "Carta");
         impresora.Encender();
         impresora.formatear("Datos de la impresora");
         System.out.println(impresora);

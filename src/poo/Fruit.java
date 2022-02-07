@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Clase que representa una fruta
  * @author Jose Daniel Maza
  */
-public class Fruta {
+public class Fruit {
     /**
      * Atributos de la clase
      */
@@ -17,7 +17,7 @@ public class Fruta {
     /**
      * Constructor por defecto
      */
-    public Fruta(){
+    public Fruit(){
     }
 
     /**
@@ -26,7 +26,7 @@ public class Fruta {
      * @param averageWeight
      * @param colors
      */
-    public Fruta(String name, Float averageWeight, ArrayList<String> colors) {
+    public Fruit(String name, Float averageWeight, ArrayList<String> colors) {
         this.name = name;
         this.averageWeight = averageWeight;
         this.colors = colors;

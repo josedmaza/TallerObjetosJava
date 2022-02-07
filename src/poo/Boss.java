@@ -4,7 +4,7 @@ package poo;
  * @author Jose Daniel Maza
  * Clase Jefe que hereda de Empleado
  */
-public class Jefe extends Empleado {
+public class Boss extends Employee {
     private String departamento;
     private double incentivo;
 
@@ -14,7 +14,7 @@ public class Jefe extends Empleado {
      * @param departamento
      * @param incentivo
      */
-    public Jefe(String nombre, String departamento, double incentivo) {
+    public Boss(String nombre, String departamento, double incentivo) {
         super(nombre);
         this.departamento = departamento;
         this.incentivo = incentivo;

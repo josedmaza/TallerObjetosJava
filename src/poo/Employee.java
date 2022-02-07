@@ -7,7 +7,7 @@ import java.util.GregorianCalendar;
  * @author jose
  * Clase que representa un empleado
  */
-public class Empleado {
+public class Employee {
     /**
      * Atributos de la clase Empleado
      */
@@ -18,7 +18,7 @@ public class Empleado {
     /**
      * Constructor por defecto
      */
-    public Empleado() {
+    public Employee() {
     }
 
     /**
@@ -29,14 +29,14 @@ public class Empleado {
      * @param mes
      * @param dia
      */
-    public Empleado(String nombre, double sueldo, int agno, int mes, int dia) {
+    public Employee(String nombre, double sueldo, int agno, int mes, int dia) {
         this.nombre = nombre;
         this.sueldo = sueldo;
         GregorianCalendar cal = new GregorianCalendar(agno, mes - 1, dia);
         this.altaContrato = cal.getTime();
     }
 
-    public Empleado(String nombre) {
+    public Employee(String nombre) {
         this.nombre = nombre;
     }
 
@@ -58,17 +58,17 @@ public class Empleado {
     }
 
     public static void main(String[] args) {
-        Empleado[] empleados = new Empleado[3];
+        Employee[] empleados = new Employee[3];
 
-        empleados[0] = new Empleado("Jose", 2000, 1991, 10, 8);
-        empleados[1] = new Empleado("Rocky", 3000, 1998, 5, 5);
-        empleados[2] = new Empleado("Arturo", 4000, 1995, 4, 20);
+        empleados[0] = new Employee("Jose", 2000, 1991, 10, 8);
+        empleados[1] = new Employee("Rocky", 3000, 1998, 5, 5);
+        empleados[2] = new Employee("Arturo", 4000, 1995, 4, 20);
 
         empleados[0].subeSueldo(5);
         empleados[1].subeSueldo(10);
         empleados[2].subeSueldo(20);
 
-        for (Empleado empleado : empleados) {
+        for (Employee empleado : empleados) {
             System.out.println("Empleado: " + empleado.getNombre() +"\nSueldo: " + empleado.getSueldo() +
                     "\nFecha de alta: " + empleado.altaContrato);
         }
